@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {font-family: #4CAF50, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.container {
+    padding: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+    <script src="../web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+</head>
+<script src="../const.js"></script>
+<script src="Fetch_fir.js"></script>
+<body>
+
+    <center><b><h2> Search FIR Details</h2></b></center>
+    <div class="container">
+    <label for="FirNo"><b>Enter Fir Number</b></label>
+    <input type="text" placeholder="Enter Fir Number"  id="FirNo">
+    <button type="button" onclick="submit()">Show</button>
+    </div>
+    <br>
+    <br>
+
+    <div class="container">
+
+    <div class="container">
+      <h2><center>FIR Details</center></h2>
+
+    <div class="container">
+    <h3>Fir Number :</h3>
+    <h3 id="firNumber"></h3>
+    </div>
+
+    <div class="container">
+    <h3><b>Occurrence Date :</b></h3>
+    <h3 id ="occDate"></h3>
+    </div>
+
+    <div class="container">
+    <h3><b>Occurrence Time :</b></h3>
+    <h3 id ="occTime"></h3>
+    </div>
+
+    </div>
+
+
+    <div class="container">
+
+        <h2><center>Complainant Details</center></h2>
+
+        <div class="container">
+        <h3>Complainant Name :</h3>
+        <h3 id ="compName"></h3>
+        </div>
+
+
+        <div class="container">
+        <h3><b>Complainant Address :</b></h3>
+        <h3 id="compAddress"></h3>
+        </div>
+
+        <div class="container">
+        <h3>Complainant Contact :</h3>
+        <h3 id="compContact"></h3>
+        </div>
+
+        </div>
+
+        <div class="container">
+
+        <h2><center>Accused Person Details</center></h2>
+
+         <div class="container">
+        <h3><b>Accused Name :</b></h3>
+        <h3 id="accusedName"></h3>
+        </div>
+
+         <div class="container">
+        <h3><b>Accused Address :</b></h3>
+        <h3 id="accusedAddress"> </h3>
+        </div>
+
+        </div>
+
+        <div class="container">
+        <h2><center>Incident Details</center></h2>
+
+        <div class="container">
+        <h3><b>Incident Description :</b></h3>
+        <h3 id="incidentDescription"></h3>
+        </div>
+
+        </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn" onclick="location.href='../Login/profile.html'>Back</button>
+  </div>
+</body>
+</html>

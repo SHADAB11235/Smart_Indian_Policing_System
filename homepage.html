@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'white')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('About', this, 'white')">About</button>
+<button class="tablink" onclick="openPage('Contact', this, 'white')">Contact Us</button>
+
+<div id="Home" class="tabcontent">
+
+    <div class="container">
+    <center><h2><b>
+    WELCOME TO THE WORLD OF SMART POLICING SYSTEM
+    <br>
+    <br>
+    <img src="india.jpg" alt="Satyamev Jayate" width="200px" height="200px">
+    </b></h2></center>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+    <button type="button" onclick="window.location='./superUser/superUser.html'">Super User Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+    <button type="button" onclick="window.location='./Login/login.html' ">Login</button>
+    </div>
+
+</div>
+
+<div id="About" class="tabcontent">
+
+    <div class="container">
+    <p>
+      => Evidence tampering is well known in legal cases in india.
+<br><br>
+      => We present the idea of uploading the evidences and FIRs on block chain.
+<br><br>
+      => Currently Indian Police is using CCTNS (Crime and Criminal Tracking Network and Systems),
+         which is a central server based implementation for just lodging FIR.
+<br><br>
+      => The CCTNS is just in its development phase.
+<br><br>
+      => Using CCTNS will definitely pose a problem in Future such as server hacking,
+         single point of failure and most importantly the risk of D-DOS attack can pose to the problem of permanent loss of data.
+         Moreover there is no provision of uploading the evidences in the current system CCTNS.
+<br><br>
+      => Our Idea uses BlockChain which provides immutability, ensures data integrity in distributed platform.
+<br><br>
+      => TECHNOLOGIES USED:
+      	Ethereum BlockChain
+      	Solidity in Remix
+      	IPFS (Inter planetary file system)
+      	Basic Web Development Tools (HTML,CSS, JavaScript)
+<br><br>
+      => Evidences will be uploaded on IPFS which will generate a Hash Value and that hash value will be stored in Block chain,
+         which can later be used to fetch data.
+    </p>
+    </div>
+
+</div>
+
+<div id="Contact" class="tabcontent">
+
+    <div class="container">
+
+    <div class="card" style="background:grey">
+    <img src="../isps/images/amrendra.jpg" alt="Amrendra Narayan Jha" style="width:50%">
+    <h1>Amrendra Narayan Jha</h1>
+    <p class="title">Computer Science and Engineering Student</p>
+    <p>Motilal Nehru National Institute Of Technology , Allahabad</p>
+    <p>Contact No. : 7905857339</p>
+    </div>
+
+    <div class="card" style="background:grey">
+    <img src="../isps/images/ambikesh.jpeg" alt="Ambikesh Jha" style="width:50%">
+    <h1>Ambikesh Jha</h1>
+    <p class="title">Computer Science and Engineering Student</p>
+    <p>Motilal Nehru National Institute Of Technology , Allahabad</p>
+    <p>Contact No. : 9621136370</p>
+    </div>
+
+    <div class="card" style="background:grey">
+    <img src="../isps/images/aman.jpg" alt="Aman Gupta" style="width:50%">
+    <h1>Aman Gupta</h1>
+    <p class="title">Computer Science and Engineering Student</p>
+    <p>Motilal Nehru National Institute Of Technology , Allahabad</p>
+    <p>Contact No. : 7905877213</p>
+    </div>
+
+    <div class="card" style="background:grey">
+    <img src="../isps/images/shadab.jpg" alt="Mohd. Shadab" style="width:50%">
+    <h1>Mohd. Shadab</h1>
+    <p class="title">Computer Science and Engineering Student</p>
+    <p>Motilal Nehru National Institute Of Technology , Allahabad</p>
+    <p>Contact No. : 9044756744</p>
+    </div>
+
+
+    </div>
+
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

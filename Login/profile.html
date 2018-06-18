@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #4CAF50;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 50%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.tablink:hover {
+    background-color: #4CAF50;
+}
+
+img.go{
+    border-radius: 50%;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#Home {background-color: white;}
+#About {background-color: white;}
+</style>
+</head>
+<script src="../web3.min.js"></script>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'white')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('About', this, 'white')">About You</button>
+
+<div id="Home" class="tabcontent">
+
+ <div class="container" style="background-color:#f1f1f1">
+  <center><img src="../india.jpg" width="150px" height="150px"></center>
+  </div>
+
+ <div class="container" style="background-color:#f1f1f1">
+    <div class="container">
+    <center><h2>Actions That Can be Performed By You<h2></center>
+    </div>
+
+    <button type="button" onclick="location.href='../fir/Fetch_fir.html'">Fetch Details by FIR Number</button>
+  </div>
+
+<div class="container" style="background-color:#f1f1f1">
+    <button type="button" onclick="location.href='../fir/fir.html'">File an FIR</button>
+  </div>
+
+<div class="container" style="background-color:#f1f1f1">
+<button type="button" onclick="location.href='../Evidence/fetchEvidence.html'">Fetch Evidence by FIR Number</button>
+</div>
+<div class="container" style="background-color:#f1f1f1">
+  <button type="button" onclick="location.href='../Evidence/evidences.html'">Add Evidence</button>
+</div>
+
+</div>
+
+<div id="About" class="tabcontent">
+<center>
+    <div class="container">
+
+    <div class="container">
+    <h3>Full Name :</h3>
+    <h3 id="fullName"></h3>
+    </div>
+
+    <div class="container">
+    <h3>Police ID :</h3>
+    <h3 id="policeId"></h3>
+    </div>
+
+    <div class="container">
+    <h3>Username :</h3>
+    <h3 id="username"></h3>
+    </div>
+
+    <div class="container">
+    <h3><b>Contact Number :</b></h3>
+    <h3 id="contactNo"></h3>
+    </div>
+
+    <div class="container">
+    <h3><b>Postal Address :</b></h3>
+    <h3 id ="postalAddress"></h3>
+    </div>
+
+    <div class="container">
+    <h3>UID :</h3>
+    <h3 id="uid"></h3>
+    </div>
+
+    <div class="container">
+    <h3><b>Police Station Number :</b></h3>
+    <h3 id ="policeStationNo"></h3>
+    </div>
+
+    </div>
+
+    </div>
+</center>
+
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+</body>
+</html>

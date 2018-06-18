@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="addUser.css">
+<script src="../web3.min.js"></script>
+</head>
+<script src="addUser.js"></script>
+<body>
+
+
+    <div class="container">
+      <center><img src="addUser.png" alt="Super User" style="width:125px;height:125px;"><h1>Add User</h1></center>
+      <p>Please fill in this form to add an user.</p>
+      <hr>
+
+      <label for="name"><b>Full Name</b></label>
+      <input type="text" placeholder="Enter Full Name" name="name" id="name" required>
+
+      <label for="policeId"><b>Police ID</b></label>
+      <input type="text" placeholder="Enter Police ID" name="policeId" id="pId" required>
+
+
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" id="uName" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="pass" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label for="contactNo"><b>Contact Number</b></label>
+      <input type="text" placeholder="Enter Contact Number" name="contactNo" id="contactNo" required>
+
+      <label for="postalAddress"><b>Postal Address</b></label>
+      <input type="text" placeholder="Enter Postal Address" name="postalAddress" id="postalAddress" required>
+
+      <label for="uid"><b>UID</b></label>
+      <input type="text" placeholder="Enter UID" name="uid" id="uId"required>
+
+      <label for="policeStationNo"><b>Police Station Number</b></label>
+      <input type="text" placeholder="Enter Police Station Number" name="policeStationNo" id="psNo"required>
+
+      <div class="container">
+      <button type="button" class="signupbtn" onclick="add()">Add User</button>
+      <button type="button" class="cancelbtn">Cancel</button>
+      </div>
+      </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="fetchEvidences.css">
+  <script src="https://wzrd.in/standalone/buffer"></script>
+  <script src="../web3.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://unpkg.com/ipfs-api/dist/index.js"></script>
+
+</head>
+<script src="fetchEvidence.js"></script>
+<script src="../const.js"></script>
+<body>
+  <h2><center>Evidences Fetch</center></h2>
+  <div class="container">
+    <label for="FirNo"><b>Enter Fir Number</b></label>
+    <input type="text" placeholder="Enter Fir Number"  id="firNo">
+    <button type="button" onclick="upload()">Show</button>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+  <button type="button" class="cancelbtn" onclick="location.href='../Login/profile.html';">Cancel</button>
+
+  </div>
+  <div class="container" style="background-color:#f1f1f1" id="evidences">
+    <table id="evidenceTable" border="1">
+      <tr>
+        <th>Evidence Link</th>
+        <th>Uploaded By</th>
+        <th>Timestamp</th>
+      </tr>
+    </table>
+  </div>
+</form>
+
+</body>
+</html>

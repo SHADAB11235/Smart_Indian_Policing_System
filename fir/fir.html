@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="fir.css"/>
+<script src="../web3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+</head>
+<script src="firReg.js">
+
+</script>
+<script src="../const.js"></script>
+<body>
+
+<h2><center>FIR details</center></h2>
+
+   <div class="container">
+      <label for="firNum"><b>FIR Number</b></label>
+      <input type="text" placeholder="Enter FIR Number" name="firNum"   id = "firNUm"required>
+
+      <label for="occurrenceDate"><b>Occurrence Date (DD/MM/YYYY)</b></label>
+      <input type="date" placeholder="Enter Occurrence Date" name="occurrenceDate" id ="occDate"required>
+
+      <label for="occurrenceTime"><b>Occurrence Time</b></label>
+      <input type="time" placeholder="Enter Occurrence Time" name="occurrenceTime" id ="occTime"required>
+    </div>
+
+    <div class="container">
+      <h2><center>Complainant Details</center></h2>
+
+      <label for="compName"><b>Complainant Name</b></label>
+      <input type="text" placeholder="Enter Complainant Name" name="compName" id ="compName" required>
+
+      <label for="compAddress"><b>Complainant Address</b></label>
+      <input type="text" placeholder="Enter Complainant Address" name="compAddress" id ="compAddress" required>
+
+      <label for="compContact"><b>Complainant Contact</b></label>
+      <br>
+      <input type="text" placeholder="Enter Complainant Contact" name="compContact" id ="compContact"required>
+    </div>
+
+
+    <div class="container">
+      <h2><center>Accused Person Details</center></h2>
+
+      <label for="accName"><b>Accused Name</b></label>
+      <input type="text" placeholder="Enter Accused Name" name="accName" id ="accName" required>
+
+      <label for="accAddress"><b>Accused Address</b></label>
+      <input type="text" placeholder="Enter Accused Address" name="accAddress" id ="accAddress"required>
+    </div>
+
+    <div class="container">
+      <h2><center>Incident Details</center></h2>
+
+      <label for="incidentDetails"><b>Incident Description</b></label>
+      <textarea rows="10" placeholder="Enter Incident Description" class="wt-resize" style="width:100%;" id = "incidentDetails">
+	     </textarea>
+    </div>
+
+    <div class="container">
+      <h2><center>FIR filed by</center></h2>
+      <h3 id = "entryPoliceID"></h3>
+	     </textarea>
+    </div>
+
+
+    <div class="container">
+      <button type="button" onclick="submit()">Submit</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+    </div>
+
+</body>
+</html>
